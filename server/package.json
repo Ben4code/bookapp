@@ -1,0 +1,16 @@
+{
+  "name": "bookapp",
+  "version": "1.0.0",
+  "description": "A book app with express, react, graphql, and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ben4code",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.4.2"
+  }
+}

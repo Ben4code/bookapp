@@ -6,7 +6,106 @@
 html{
   box-sizing: border-box;
 }
+body{
+  background: #eee;
+  width: 80%;
+  margin: 2rem auto;
+}
+.app h1{
+  color: #444;
+  text-align: center;
+}
 
-.App{
-  margin: 2rem;
+.app{
+  width: 60%;
+  height: 100%;
+}
+
+.book-list{
+  padding: 0;
+}
+.book-list li{
+  display: inline-block;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 1px solid #888;
+  border: 1px solid #880E4f;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  cursor: pointer;
+  color: #880E4f;
+}
+
+.form{
+  background: #fff;
+  padding: 50px 30px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 460px;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+}
+
+.form .field{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 10px; 
+}
+.field label{
+  text-align: right;
+  padding: 6px;
+}
+.form h3{
+  text-align: center;
+}
+.field input, .field select{
+  margin: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px #880E4f solid;
+  outline: none;
+}
+.field button{
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 0;
+  padding: 0 10px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  background: #880E4f;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
+  outline: none;
+}
+
+.book-details{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: #AD1457;
+  padding: 30px;
+  overflow: auto;
+  box-shadow: -2px -3px 5px rgba(0,0,0,0.3);
+  box-sizing: border-box;
+  color: #fff;
+  line-height: 4;
+}
+.book-details h3{
+  text-align: center;
+  margin-top: 5rem;
+}
+.book-details h2{
+  text-align: center;
+  margin-top: 5rem;
+}
+.book-details span{
+  font-weight: 700;
+}
+.other-books li{
+  margin-left: 5rem;
+  line-height:  2;
 }

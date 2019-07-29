@@ -45,7 +45,7 @@ class AddBook extends Component {
 
     render() {
         return (
-            <div>
+            <div className="form">
                 <h3>Add New Book</h3>
                 <form onSubmit={this.onSubmitHandle}>
                     <div className="field">
@@ -57,13 +57,14 @@ class AddBook extends Component {
                         <input type="text" name="genre" onChange={this.onChangeHandle} value={this.state.genre} />
                     </div>
                     <div className="field">
+                    <label htmlFor="name">Book Author</label>
                         <select name="authorId" onChange={this.onChangeHandle} value={this.state.authorId}>
                             <option value="">Select Author</option>
                             {this.selectAutorOptions()}
                         </select>
                     </div>
                     <div className="field">
-                        <button type="submit">Submit</button>
+                        <button type="submit">+</button>
                     </div>
                 </form>
             </div>

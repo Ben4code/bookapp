@@ -13,7 +13,7 @@ const {
     GraphQLNonNull
 } = graphql;
 
-//Content Schema
+//-------------------Content Schema--------------------
 const BookType = new GraphQLObjectType({
     name: 'Book',
     fields: () => ({
@@ -46,7 +46,7 @@ const AuthorType = new GraphQLObjectType({
 });
 
 
-//Content Query
+//----------------------- Content Queries ---------------------------
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
     fields: {
@@ -83,6 +83,8 @@ const RootQuery = new GraphQLObjectType({
 })
 
 
+
+//------------------- Content Mutations --------------------
 const Mutation = new GraphQLObjectType({
     name: 'Mutation',
     fields: {
@@ -118,6 +120,7 @@ const Mutation = new GraphQLObjectType({
         }
     }
 })
+
 
 module.exports = new GraphQLSchema({
     query: RootQuery,

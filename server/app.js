@@ -2,6 +2,8 @@ const express = require('express');
 const graphqlHTTP = require('express-graphql');
 const schema = require('./schema/schema');
 const  mongoose = require('mongoose')
+const cors = require('cors')
+
 
 mongoose.connect('mongodb://ben4code:ben4code@ds343217.mlab.com:43217/gql-bookapp', {useNewUrlParser: true})
 .then(()=> console.log('MongoDB connected'))
@@ -9,6 +11,10 @@ mongoose.connect('mongodb://ben4code:ben4code@ds343217.mlab.com:43217/gql-bookap
 
 
 const app = express();
+
+//Allow cross origin requests
+app.use(cors());
+
 
 
 app.use('/graphql', graphqlHTTP({
